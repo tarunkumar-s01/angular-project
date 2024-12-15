@@ -1,0 +1,19 @@
+/* Footer Styling */
+
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    
+  }
+
+  footer {
+    background: linear-gradient(90deg, #e6f4e3, #d4f0cb); /* Subtle gradient */
+    padding: 15px 30px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  

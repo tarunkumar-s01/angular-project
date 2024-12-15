@@ -1,0 +1,47 @@
+.main-one {
+    background: linear-gradient(90deg, #e6f4e3, #d4f0cb); /* Gradient for a fresh look */
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+     /* Increased padding for better spacing */
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Ensures content stays within the container */
+}
+
+.main-one img {
+    position: relative;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); 
+    bottom:-17px;
+    height: 373px; 
+    max-width: 100%; 
+    border-radius: 8px; /* Slightly rounded corners for the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.main-one h3{
+    position: relative;
+    bottom: 188px;
+    right: 249px;
+    color: darkgreen;
+}
+
+.main-one h2 {
+    position: relative;
+    bottom: 200px; /* Maintains placement above the image */
+    left: -230px; /* Removed hardcoded left offset for better responsiveness */
+    height: 200%;
+    color: darkgreen; /* Retains original color */
+    font-family: sans-serif; /* Clean, simple font */
+    font-size: 24px; /* Slightly larger text for readability */
+    font-weight: bold; /* Increased weight for better emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.main-two{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-style: initial;
+    color: darkgreen;
+}

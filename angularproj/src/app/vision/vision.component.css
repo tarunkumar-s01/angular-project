@@ -1,0 +1,50 @@
+.vision-mission {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.vision-section, .mission-section {
+    background: linear-gradient(90deg, #e6f4e3, #d4f0cb); /* Your gradient background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.vision-section {
+    border-left: 5px solid #28a745;
+}
+
+.mission-section {
+    border-left: 5px solid #007bff;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,65 @@
+.carousel-item img {
+    height: 500px; /* Set height for carousel images */
+    object-fit: cover; /* Ensure the images cover the entire area */
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  /* Background Styling */
+
+  
+  /* Main Section Styling */
+  .main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: linear-gradient(90deg, #e6f4e3, #d4f0cb);
+    height: calc(100vh - 70px); /* Adjust to leave space for header/footer if needed */
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Main Image Styling */
+  .main-image {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds depth to the image */
+    border-radius: 15px; /* Rounded corners */
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in effect */
+  }
+  
+  /* Optional Heading/Caption Styling */
+  .main-image-container h3 {
+    position: absolute;
+    top: 10%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* White text for contrast */
+    font-size: 3rem;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+    z-index: 2;
+  }
+  
+ 
+
+  .main-image-container img{
+    width: 100%;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  

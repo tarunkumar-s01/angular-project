@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(90deg, #e6f4e3, #d4f0cb); /* Subtle gradient */
+  padding: 15px 30px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 50px; /* Adjust logo height for better visibility */
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1a5129; /* Dark green */
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 20px; /* Rounded buttons */
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+  background-color: #1a5129; /* Dark green on hover */
+  color: #fff; /* White text on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Highlighted Buttons */
+nav ul li a.highlight {
+  background: linear-gradient(90deg, #fbe94c, #fdd835); /* Bright yellow gradient */
+  color: #000; /* Black text */
+  font-weight: 700;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+nav ul li a.highlight:hover {
+  background: linear-gradient(90deg, #fdd835, #fbe94c); /* Reverse gradient */
+  color: #fff; /* White text */
+  transform: scale(1.1); /* Slight zoom effect for highlights */
+}
+
+nav ul li a.order-now {
+  background: linear-gradient(90deg, #ffab00, #ffcc00); /* Bright orange gradient */
+  color: #fff; /* White text */
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px; /* Fully rounded button */
+  box-shadow: 0 4px 8px rgba(255, 172, 0, 0.4); /* Glow effect */
+  transition: all 0.3s ease;
+}
+
+nav ul li a.order-now:hover {
+  background: linear-gradient(90deg, #ffcc00, #ffab00); /* Reverse gradient */
+  box-shadow: 0 6px 12px rgba(255, 172, 0, 0.6); /* Enhanced glow */
+  transform: scale(1.15); /* Bigger zoom effect */
+}
+
+nav ul li.dropdown {
+    cursor: pointer;
+  }
+  
+  nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    list-style: none;
+    z-index: 100;
+  }
+  
+  nav ul li .dropdown-menu li {
+    padding: 10px 20px;
+  }
+  
+  nav ul li .dropdown-menu li a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  nav ul li:hover .dropdown-menu {
+    display: block;
+  }
+  /* Dropdown Container */
+.dropdown {
+    position: relative; /* Ensures dropdown-menu is positioned relative to the parent */
+  }
+  
+  .dropdown .dropdown-menu {
+    min-width: 180px; /* Ensure a uniform width for the dropdown */
+    background: linear-gradient(90deg, #e6f4e3, #d4f0cb); /* Match header gradient */
+    border: none; /* Remove border for a clean look */
+    border-radius: 8px; /* Smooth corners */
+    padding: 10px 0; /* Padding around the items */
+  }
+  
+  .dropdown .dropdown-menu li {
+    padding: 8px 15px; /* Space around dropdown items */
+  }
+  
+  .dropdown .dropdown-menu li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a5129; /* Consistent green color */
+    transition: all 0.3s ease;
+    display: flex; /* Allows alignment */
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+  }
+  
+  .dropdown .dropdown-menu li a:hover {
+    background-color: #1a5129; /* Dark green hover effect */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }
+  
+  /* Dropdown Icon (Optional for items) */
+  .dropdown .dropdown-menu li a::before {
+    content: '✔'; /* Example icon (use your preferred Unicode or font icon) */
+    font-size: 12px;
+    color: #1a5129;
+    display: inline-block;
+  }
+  
+  /* Dropdown Animation */
+  .dropdown-menu {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-10px); /* Slightly above its position */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1; /* Fully visible on hover */
+    transform: translateY(0); /* Slide into position */
+    visibility: visible;
+  }
+  
